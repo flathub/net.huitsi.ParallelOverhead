@@ -4,10 +4,11 @@ runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 command: parallel_overhead
 finish-args:
-- --share=ipc
-- --socket=x11
-- --device=dri
+- --socket=wayland
+- --socket=fallback-x11
 - --socket=pulseaudio
+- --device=dri
+- --share=ipc
 modules:
 - name: parallel_overhead
   buildsystem: simple
@@ -15,5 +16,5 @@ modules:
   - make install bindir=/app/bin prefix=/app install_man=""
   sources:
   - type: archive
-    url: https://codeberg.org/Huitsi/ParallelOverhead/releases/download/1.1.2/ParallelOverhead-1.1.2-source_with_built_assets.tar.gz
-    sha256: d842a221d26bf4cc9d1a017a8af307ee15d13e60bea94772f752e87fbc855d9b
+    url: https://codeberg.org/Huitsi/ParallelOverhead/releases/download/1.1.3/ParallelOverhead-1.1.3-source_with_built_assets.tar.gz
+    sha256: 5da2b186da429f6217e0902279107ee2e17b3afc0750ae45210f6b91eadb248d
