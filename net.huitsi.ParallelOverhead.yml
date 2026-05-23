@@ -1,6 +1,6 @@
 app-id: net.huitsi.ParallelOverhead
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: parallel_overhead
 finish-args:
@@ -18,3 +18,5 @@ modules:
   - type: archive
     url: https://codeberg.org/Huitsi/ParallelOverhead/releases/download/1.1.4/ParallelOverhead-1.1.4-source_with_built_assets.tar.gz
     sha256: 097d579b72fbd389394dd3921233f40328e2d70c275506ce64acf54c750336fe
+  - type: patch
+    path: fix-build-errors.patch

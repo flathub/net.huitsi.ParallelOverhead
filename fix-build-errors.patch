@@ -1,0 +1,26 @@
+From 6cf267b835894035faa5d596a91eb4b3d6a3fe13 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sat, 23 May 2026 14:48:29 +0300
+Subject: [PATCH] Fix build errors
+
+Signed-off-by: Sabri Ünal <yakushabb@gmail.com>
+---
+ src/audio.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/audio.h b/src/audio.h
+index 3283051..3604003 100644
+--- a/src/audio.h
++++ b/src/audio.h
+@@ -2,7 +2,7 @@
+  * SPDX-License-Identifier: MIT
+  */
+ 
+-void pause_music();
++void pause_music(char pause);
+ void reset_music();
+ void play_move_sound();
+ void play_death_sound();
+--
+libgit2 1.7.2
+
